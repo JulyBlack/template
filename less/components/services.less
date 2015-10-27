@@ -1,0 +1,55 @@
+.services {
+  padding-top: 30px;
+  position: relative;
+
+  .btn {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    margin-left: -72px;
+    padding: 5px 0;
+    width: 144px;
+    font-family: @bebas-neue;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+[class^='services-'] {
+  margin-bottom: 20px;
+  text-align: center;
+
+  h3 {
+    font-family: @bree-serif;
+    font-size: @font-size--md;
+  }
+
+  a {
+    color: @blue--dark;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    background-repeat: no-repeat;
+  }
+
+  &.services-web:before {
+    background-image: url('../img/laptop.png');
+  }
+
+  &.services-search:before {
+    background-image: url('../img/search.png');
+  }
+
+  &.services-shop:before {
+    background-image: url('../img/cart.png');
+  }
+
+  &.services-social:before {
+    background-image: url('../img/social.png');
+  }
+}
