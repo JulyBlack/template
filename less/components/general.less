@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bebas Neue'), url('../fonts/BebasNeue.woff') format('woff');
+}
+
+body {
+  position: relative;
+  color: @gray--dark;
+  font-size: @font-size--sm;
+}
+
+.btn-blue,
+.btn-blue:visited {
+  color: @white !important;
+  background-color: @blue--dark !important;
+
+  &:hover {
+    color: @white;
+    background-color: @blue--dark;
+    box-shadow: 0 4px 0 0 darken(@blue--dark, 15%);
+  }
+
+  &:active {
+    color: @white;
+    background-color: darken(@blue--dark, 10%);
+    box-shadow: 0 4px 0 0 darken(@blue--dark, 15%);
+  }
+}
+
+.btn-orange,
+.btn-orange:visited {
+  color: @white !important;
+  background-color: @orange !important;
+
+  &:hover {
+    color: @white;
+    background-color: @orange;
+    box-shadow: 0 4px 0 0 desaturate(darken(@orange, 15%), 40%);
+  }
+
+  &:active {
+    color: @white;
+    background-color: desaturate(darken(@orange, 8%), 30%);
+    box-shadow: 0 4px 0 0 desaturate(darken(@orange, 15%), 40%);
+  }
+}
